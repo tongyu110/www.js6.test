@@ -11,20 +11,32 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <script src="/js/babel-browser.min.js"></script>
+        
         <script src="/js/common.js"></script>
+        <script src="/Example/Promise.js"></script>
+
+
+        <script style="text/javascript">
+
+            imgAjaxLoadFromPromiseTest();    
+
+
+            function test(age) {
+                console.log(age);
+            }
+
+            function callTest(fun,param)  {
+                fun(param);
+            }
+
+            callTest(test,20);
+
+        </script>
+
         <script type="text/babel">
 
 
-            var d = [1,2,3];
-            d.map(x=>x*x);
-            console.log(d);
-            
 
-
-            test();
-            const getMessage = () => "Hello World";
-            document.getElementById('output').innerHTML = getMessage();
         </script>
 			
 
